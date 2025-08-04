@@ -1,21 +1,21 @@
 {
-	"name": "obsidian-vite",
+	"name": "starter-obsidian-vite",
 	"author": "",
-	"license": "MIT",
+	"license": "Apache-2.0",
 	"keywords": [],
 	"version": "0.0.0",
 	"main": "main.js",
 	"scripts": {
 		"dev": "vite build --watch --mode=development",
 		"build": "vite build",
-		"version": "node version-bump.mjs && git add manifest.json versions.json"
+		"version": "npx changelogen@latest --bump && node version-bump.mjs && git add manifest.json versions.json"
 	},
 	"devDependencies": {
 		"@types/node": "^20.14.11",
 		"builtin-modules": "^3.3.0",
 		"obsidian": "latest",
-	    "tslib": "2.8.1",
-	    "typescript": "5.7.2",
+		"tslib": "2.8.1",
+		"typescript": "5.7.2",
 		"vite": "^5.3.4"
 	}
 }
